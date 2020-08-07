@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ArticleDetailActivity">
+
+    <TextView
+        android:id="@+id/tv_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="nom"
+        android:layout_margin="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="prix"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prix"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="description"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_lien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="lien"
+        android:layout_margin="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/jolie_petite_etoile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star_big_on"
+        app:layout_constraintLeft_toRightOf="@+id/tv_lien"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lien"
+        android:layout_margin="50dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/jolie_petite_etoile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="MODIFIER"
+        android:onClick="onClickUpdate"
+
+
+        />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Supprimer"
+        android:onClick="onClickDelete"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

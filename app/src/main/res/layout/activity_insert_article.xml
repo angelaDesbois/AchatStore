@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.InsertArticleActivity"
+    >
+
+    <TextView
+        android:id="@+id/titre_insertion"
+        android:text="Modifier des articles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/et_nom_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titre_insertion"
+        android:hint="Nom Article"
+        android:layout_margin="50dp"
+        />
+
+    <EditText
+        android:id="@+id/et_prix_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_nom_article"
+        android:hint="Prix"
+        android:layout_margin="50dp"
+        />
+
+    <EditText
+        android:id="@+id/et_description_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_prix_article"
+        android:hint="Description"
+        android:layout_margin="50dp"
+        />
+
+    <EditText
+        android:id="@+id/et_lien_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_description_article"
+        android:hint="Lien"
+        android:layout_margin="50dp"
+        />
+
+    <EditText
+        android:id="@+id/et_note_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_lien_article"
+        android:hint="Note"
+        android:layout_margin="50dp"
+        />
+
+    <Button
+        android:id="@+id/btn_insert_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter!"
+
+        app:layout_constraintTop_toBottomOf="@id/et_note_article"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_margin="50dp"
+        android:onClick="onClickSaveWololo"
+        tools:ignore="MissingConstraints" />
+
+
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
